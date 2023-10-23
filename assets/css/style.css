@@ -129,3 +129,32 @@ footer a:hover {
     text-decoration: underline;
     color: #f5f5f5;
 }
+
+.list-project {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+
+.list-project div {
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .list-project {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .list-project {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
