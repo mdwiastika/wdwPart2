@@ -10,6 +10,7 @@ body {
     margin: 0px;
     padding: 0px;
     margin-top: -22px;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -24,13 +25,11 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-image: url("https://images.unsplash.com/photo-1698319361163-69baf7fad322?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background-image: url("https://images.unsplash.com/photo-1644971910791-38aaa265386a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* background: #0f0c29; */
     background-size: cover;
     background-position: center;
-    opacity: 1;
+    /* opacity: 0.5; */
 }
 
 header .overlay {
@@ -55,7 +54,7 @@ header h2 {
     font-size: 24px;
     color: #fff;
     position: absolute;
-    top: 60%;
+    top: 55%;
     z-index: 1;
     width: 100%;
     margin-top: 40px;
@@ -72,6 +71,8 @@ header h2 {
     margin-bottom: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: auto;
+    color: #333;
+    background-color: white;
     padding: 20px;
 }
 
@@ -82,8 +83,8 @@ header h2 {
     margin-right: 20px;
 }
 .list-project div:hover{
-    background-color: #333;
     color: white;
+    background-color: #333;
     transform: scale(1.02);
 }
 
@@ -150,6 +151,8 @@ footer a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
+    background-color: white;
+    color: #333;
     align-items: center;
     font-weight: 600;
     font-size: 20px;
