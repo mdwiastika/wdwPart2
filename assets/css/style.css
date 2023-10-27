@@ -5,17 +5,22 @@ html {
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     margin: 0px;
     padding: 0px;
-    margin-top: -22px;
+    margin-top: 0px;
     background-color: rgb(255, 255, 255);
 }
 
 header {
     height: 100vh;
     text-align: center;
+    position: relative;
 }
 
 header::before {
@@ -30,6 +35,48 @@ header::before {
     background-size: cover;
     background-position: center;
     /* opacity: 0.5; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+nav .nav-parent li a {
+    padding: 5px 14px;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+nav .nav-parent li a:hover {
+    background-color: rgb(0, 140, 255);
+    color: white;
 }
 
 header .overlay {
@@ -82,7 +129,8 @@ header h2 {
     height: auto;
     margin-right: 20px;
 }
-.list-project div:hover{
+
+.list-project div:hover {
     color: white;
     background-color: #333;
     transform: scale(1.02);
@@ -159,11 +207,13 @@ footer a:hover {
     font-size: 20px;
     transition: all 0.2s ease-in-out;
 }
-.list-project div p{
+
+.list-project div p {
     font-weight: 400;
     font-size: 16px;
 }
-.list-project div h5{
+
+.list-project div h5 {
     margin: 0;
 }
 
