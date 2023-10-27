@@ -41,11 +41,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 25px;
+    padding: 20px 45px;
     position: sticky;
     top: 0;
     z-index: 20;
     background-color: white;
+    border-radius: 0 0 20px 20px;
 }
 
 nav ul {
@@ -57,11 +58,11 @@ nav ul {
 }
 
 .img-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 1px solid black;
+    height: 40px;
+    width: auto;
+    /* object-fit: cover; */
+    /* border-radius: 50%; */
+    /* border: 1px solid black; */
 }
 
 nav .nav-parent li a {
