@@ -24,10 +24,13 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
+    /* background-image: url("https://images.unsplash.com/photo-1698319361163-69baf7fad322?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 header .overlay {
@@ -77,6 +80,11 @@ header h2 {
     max-width: 100px;
     height: auto;
     margin-right: 20px;
+}
+.list-project div:hover{
+    background-color: #333;
+    color: white;
+    transform: scale(1.02);
 }
 
 .overlay img {
@@ -145,6 +153,7 @@ footer a:hover {
     align-items: center;
     font-weight: 600;
     font-size: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 768px) {
