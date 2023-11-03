@@ -19,8 +19,7 @@ body {
 
 header {
     height: 100vh;
-    text-align: center;
-    position: relative;
+
 }
 
 header::before {
@@ -30,11 +29,20 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background-image: url("https://images.unsplash.com/photo-1644971910791-38aaa265386a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
     background-image: url("https://images.unsplash.com/photo-1644971910791-38aaa265386a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    /* background: #0f0c29; */
-    background-size: cover;
-    background-position: center;
-    /* opacity: 0.5; */
 }
 
 nav {
@@ -80,32 +88,26 @@ nav .nav-parent li a:hover {
     color: white;
 }
 
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+header {
+    display: flex;
+    height: calc(100vh - 99px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.45);
 }
 
 header h1 {
     font-size: 36px;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    width: 100%;
+    z-index: 10;
 }
 
 header h2 {
     font-size: 24px;
     color: #fff;
-    position: absolute;
-    top: 55%;
-    z-index: 1;
-    width: 100%;
-    margin-top: 40px;
+    z-index: 1000;
+    margin-top: 0px;
 }
 
 .container {
@@ -122,12 +124,12 @@ header h2 {
     color: #333;
     background-color: white;
     padding: 20px;
+    display: flex;
 }
 
 .about-me img {
-    float: left;
-    max-width: 100px;
-    height: auto;
+    max-width: 300px;
+    height: 100%;
     margin-right: 20px;
 }
 
@@ -137,14 +139,14 @@ header h2 {
     transform: scale(1.02);
 }
 
-.overlay img {
+header img {
     width: 200px;
     height: auto;
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+header div {
+    height: 100vh;
 }
 
 .about-me h3 {
@@ -159,12 +161,7 @@ header h2 {
     height: 200px;
     box-shadow: 0 0px 10px;
     z-index: 3;
-    position: relative;
-    top: 40%;
     object-position: center top;
-
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .about-me p {
