@@ -240,6 +240,10 @@ footer a:hover {
     .nav-parent li {
         display: block;
     }
+
+    .burger-toggle {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
